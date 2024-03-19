@@ -1,0 +1,89 @@
+//******Pied de page******//
+
+
+footer{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        background-color: #353535;
+        color: white; 
+        gap: 16px;
+
+       
+        .footer-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 30px;
+        padding: 20px;
+        
+        @media only screen and (min-width: 1024px) {
+
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            padding: 65px 65px 25px 25px;
+            gap: 90px;
+            max-width: 1560px;
+    
+            ul{
+                display: flex;
+                gap: 16px;
+    
+            }
+    
+            .space{
+    
+                padding-right: 30px;
+            }
+    
+        }
+    
+
+        h3 {
+            font-family: 'Shrikhand', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            
+
+        }
+
+        .icon{
+            font-weight: 400;
+            font-size: 16px;
+            padding-left: 11px;
+
+        }
+
+        @media only screen and (min-width: 1440px) {
+
+            max-width: 1860px;
+   
+   
+   
+           }
+    }
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

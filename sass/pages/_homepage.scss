@@ -1,0 +1,190 @@
+
+/*******Section Localisation********/
+
+.menu-restaurant {
+    background-color: $grey-light;
+    padding-bottom: 50px;
+
+    &__title{
+        text-align: center;
+        padding: 36px 0 12px 0;
+        
+    }
+
+  
+
+    &__subtitle {
+
+        text-align: center;
+        font-size: 17px;
+        padding: 0 10px 15px;
+    }
+
+}
+
+
+ .fonctionnement {
+        background-color: white;
+        padding-bottom: 20px;
+
+        h2{
+            text-align: initial;
+            padding: 44px 0 24px 15px;
+            font-size: 28px;
+            margin-left: 20px;    
+
+        }
+
+        &__container{
+            margin: auto;
+            
+
+        }
+
+        &__container-cards {
+
+          
+            padding: 0 20px;
+
+        }
+
+        p {
+            padding: 0;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+
+        &__number{
+            background-color: $color-primary;
+            width: 16px;
+            color: white;
+            font-size: 16px;
+            padding: 4px 4px 4px 10px;
+            border-radius: 50px;
+            position: relative;
+            left: -15px;
+           
+        
+        }
+        
+
+
+}
+
+
+.restaurant{
+
+    display: flex;
+    flex-direction: column;
+    background-color: $grey-light;
+    padding-bottom: 60px;
+
+
+    h2{
+                text-align: initial;
+                padding: 44px 0 24px 15px;
+                font-size: 28px;
+                margin-left: 20px; 
+
+        }
+
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    section {
+        
+        h2 {
+            text-align: center;
+            padding: 36px 78px 12px 80px;
+            font-size: 40px;
+        }
+    
+        br {
+            display: none;
+
+    }
+
+        p {
+    
+            text-align: center;
+            font-size: 15px;
+            padding: 0 40px 25px;
+        }
+    
+    }
+    
+  
+
+     .exclude-bg-color{
+
+         width: auto;
+        margin: 0;
+
+
+    }
+
+
+
+   .restaurant {
+
+    &__content{
+       
+        margin: 0 auto;
+    }
+
+   } 
+
+    
+
+    .fonctionnement {
+      
+
+        &__container{
+            margin: auto;
+            max-width: 1050px;
+    
+        }
+
+        &__container-cards {
+            display: flex;
+            
+        }
+}
+
+    .restaurant{
+        margin-top: 20px;
+        padding: 0 12px;
+
+            h2{
+
+                padding: 28px 0 20px 0;
+
+            }
+
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    section {
+        padding-bottom: 30px; 
+
+        h2 {           
+        font-size: 40px;
+        padding: 30px 0;       
+        }
+    }
+
+  
+
+}
+
+

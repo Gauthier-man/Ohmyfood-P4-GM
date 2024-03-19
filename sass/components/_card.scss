@@ -1,0 +1,252 @@
+//******Section Restaurants******//
+
+.container-menu {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0 17px;
+        gap: 20px;
+
+          .cards-menu{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            position: relative;
+
+
+       
+
+        img{
+            width: 100%;
+            aspect-ratio: 27/9;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+
+
+        }
+
+        &__card-new{
+                position: absolute;
+                width: 82px;
+                top: 13px;
+                right: 12px;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+                padding: 6px;
+                background-color: $color-green;
+                color:  #008766;
+                border-radius: 2px;
+
+        }
+
+        &__card-txt{
+            padding: 10px;
+
+
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px 6px rgba(0,0,0,0.2);
+        }
+
+      
+
+        &__title{
+            margin-bottom: 4px;
+            font-size: 20px;
+
+        }
+
+        &__subtitle {
+            text-align: initial;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .empty-heart{
+                @include empty
+
+        }
+
+        @keyframes fillHeart {
+          0% {
+              // transform: scale(0.2);
+              opacity: 0;
+          }
+          100% {
+              // transform: scale(1);
+              opacity: 1;
+          }
+      }
+  
+        .full-heart{
+                @include full;
+               
+
+                &:hover {
+                    opacity: 1;
+                    animation: fillHeart 500ms linear forwards; 
+                    }  
+                }
+
+        }
+
+        @include responsive-card-medium;
+
+        @include responsive-card-xlarge;
+    }
+
+
+/***************Mini-cards***************/
+
+.minicards-menu{
+
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+  padding: 12px 15px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 12px;
+  animation: popAnimation 0.5s ease-out;
+  animation-fill-mode: both;
+
+
+  .card-txt2 {
+    @include texthidden;
+    flex: 1;
+
+    &__title {
+      margin: 0;
+      @include texthidden;
+    }
+
+    &__subtitle {
+      text-align: start;
+      margin: 0;
+      padding: 0;
+      font-size: 15.043px;
+      @include texthidden;
+      
+    }
+
+  
+
+    
+
+  }
+
+  .prix {
+    display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+     font-weight: bold;
+    
+
+  }
+
+
+  .wrapIcon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: $color-green;
+    @include center;
+    border-radius: 100px;
+    transition-duration: 0.5s;
+
+    &_icon {
+      color: white;
+    }
+  }
+
+  .button {
+    background-color: $color-green;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    @include center;
+    transition-duration: 0.5s;
+  }
+
+  &:hover {
+    .button {
+      margin-right: -15px;
+    }
+
+  }
+  
+
+
+}
+
+    .fa-circle-check {
+        font-size: 20px;
+        @include center;
+    }
+
+
+
+    /***********  Animation Pop cards ************/
+
+    @keyframes popAnimation {
+
+
+        0% {
+            transform: scale(0)
+          }
+          100% {
+            transform: scale(1);
+          }
+
+
+
+    }
+
+
+    
+.delay-0 {
+    animation-delay: 0s;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-4 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-5 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-6 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-7 {
+    animation-delay: 0.7s;
+  }
+  
+  .delay-8 {
+    animation-delay: 0.8s;
+  }
+
+  .delay-9 {
+    animation-delay: 0.9s;
+  }

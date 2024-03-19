@@ -1,0 +1,54 @@
+
+@mixin empty {
+
+    position: absolute;
+    border: none;
+    color: #101010;
+    right: 25px;
+    bottom: 30px;
+    transform: scale(0.8);
+    font-size: 35px;
+
+
+
+
+}
+
+
+
+@mixin full {
+        position: absolute;
+        opacity: 0;
+        border: none;
+        background: linear-gradient(to left, #9356DC, #FF79DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;            
+        right: 25px;
+        bottom: 30px;
+        transform: scale(0.8);
+        transition: all .2s;
+        font-size: 35px;
+       
+    
+}
+
+@mixin texthidden {
+
+    white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+
+
+}
+
+
+@mixin center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
