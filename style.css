@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -27,17 +26,15 @@ input {
 
 /****Effet Loader****/
 @keyframes loaderAnimation {
-  0%, 100% {
+  0% {
     opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
     visibility: hidden;
-  }
-  25% {
-    opacity: 1;
-    visibility: visible; /* Rendre l'élément visible pendant l'animation */
-  }
-  75% {
-    opacity: 1;
-    visibility: visible;
   }
 }
 @keyframes animate {
@@ -55,7 +52,7 @@ input {
   background: rgba(255, 255, 255, 0.95);
   align-items: center;
   justify-content: center;
-  animation: loaderAnimation 3.5s linear forwards;
+  animation: loaderAnimation 2s linear forwards;
   position: fixed;
   z-index: 60;
 }
